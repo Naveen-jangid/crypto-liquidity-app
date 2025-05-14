@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cryptocurrency Liquidity Predictor</title>
+</head>
+<body>
+    <h1>Cryptocurrency Liquidity Predictor</h1>
+    <form method="POST" action="/predict">
+        <label for="price">Price:</label>
+        <input type="number" step="any" id="price" name="price" required><br><br>
+
+        <label for="1h">1h % Change:</label>
+        <input type="number" step="any" id="1h" name="1h" required><br><br>
+
+        <label for="24h">24h % Change:</label>
+        <input type="number" step="any" id="24h" name="24h" required><br><br>
+
+        <label for="7d">7d % Change:</label>
+        <input type="number" step="any" id="7d" name="7d" required><br><br>
+
+        <label for="24h_volume">24h Volume:</label>
+        <input type="number" step="any" id="24h_volume" name="24h_volume" required><br><br>
+
+        <label for="mkt_cap">Market Cap:</label>
+        <input type="number" step="any" id="mkt_cap" name="mkt_cap" required><br><br>
+
+        <label for="volatility_score">Volatility Score:</label>
+        <input type="number" step="any" id="volatility_score" name="volatility_score" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+        <div class="result">
+            <h3>Predicted Liquidity Ratio: <strong>{{ prediction }}</strong></h3>
+            <h4>Liquidity Classification:
+                {% if label == "Low" %}
+                    <span style="color:red;"><strong>{{ label }}</strong></span>
+                {% elif label == "Medium" %}
+                    <span style="color:orange;"><strong>{{ label }}</strong></span>
+                {% elif label == "High" %}
+                    <span style="color:green;"><strong>{{ label }}</strong></span>
+                {% else %}
+                    <span><strong>{{ label }}</strong></span>
+                {% endif %}
+            </h4>
+        </div>
+    {% elif error %}
+        <div class="error">
+            <h3>Error: {{ error }}</h3>
+        </div>
+    {% endif %}
+</body>
+</html>
