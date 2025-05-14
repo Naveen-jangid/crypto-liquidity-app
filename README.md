@@ -8,7 +8,7 @@ A machine learning web application built with **Flask** that predicts the **liqu
 
 ##  Live Demo
 
-> [Coming Soon] Deployed via [Render](https://render.com/)
+>Deployed via [Render]([https://render.com/](https://crypto-liquidity-app.onrender.com))
 
 ---
 
