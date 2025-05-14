@@ -1,5 +1,4 @@
 
-markdown
 #  Cryptocurrency Liquidity Predictor
 
 A machine learning web application built with **Flask** that predicts the **liquidity ratio** of a cryptocurrency coin using market features like price, volume, and volatility. It also classifies coins into **Low**, **Medium**, or **High Liquidity** to help traders and platforms make informed decisions.
