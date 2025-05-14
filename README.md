@@ -5,12 +5,6 @@ A machine learning web application built with **Flask** that predicts the **liqu
 
 ---
 
-##  Live Demo
-
->Deployed via [Render]([https://render.com/](https://crypto-liquidity-app.onrender.com))
-
----
-
 ##  What is Liquidity Ratio?
 
 **Liquidity Ratio = 24h Volume / Market Capitalization**
