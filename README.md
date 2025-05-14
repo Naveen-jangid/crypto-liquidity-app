@@ -1,5 +1,5 @@
 
-```markdown
+markdown
 #  Cryptocurrency Liquidity Predictor
 
 A machine learning web application built with **Flask** that predicts the **liquidity ratio** of a cryptocurrency coin using market features like price, volume, and volatility. It also classifies coins into **Low**, **Medium**, or **High Liquidity** to help traders and platforms make informed decisions.
@@ -43,7 +43,7 @@ It indicates how actively a coin is traded. A higher ratio means the asset is ea
 
 ##  Project Structure
 
-```
+
 
 crypto-liquidity-app/
 ├── app.py                          # Flask backend
@@ -114,27 +114,5 @@ python app.py
 ```
 
 Then open [http://localhost:5000](http://localhost:5000) in your browser.
-
----
-
-## 🌐 Deployment on Render (Optional)
-
-1. Go to [Render Dashboard](https://dashboard.render.com/)
-2. Create New → Web Service
-3. Connect this GitHub repo
-4. Set:
-
-   * **Build command**: `pip install -r requirements.txt`
-   * **Start command**: `python app.py`
-   * **Environment**: Python 3.10+, Port 5000
-5. Deploy!
-
----
-
-## 🙋 Author
-
-**Naveen Jangid**
-📧 [naveen@example.com](nvnjan95@gmail.com)
-🔗 [GitHub](https://github.com/Naveen-jangid)
 
 ---
